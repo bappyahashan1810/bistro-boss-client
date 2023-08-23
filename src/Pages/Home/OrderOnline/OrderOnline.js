@@ -5,18 +5,15 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { FreeMode, Pagination } from 'swiper/modules';
 import { ORDERONLINES } from './OderOnlineConstant';
+import SectionTitle from '../../../Components/SectionTitle/SectionTitle';
 
 const OrderOnline = () => {
     return (
         <div className='mt-[80px] mb-[137px]'>
-            <div className='text-center'>
-                <p className='text-yellow-400'>---From 11:00am to 10:00pm---</p>
-                <div className='flex justify-center'>
-                    <hr className='w-1/4 border-1  ' />
-                </div>
-                <h1 className='font-bold'>ORDER ONLINE</h1>
-
-            </div>
+            <SectionTitle
+                subheading={"---From 11:00am to 10:00pm---"}
+                heading={"ORDER ONLINE"}
+            ></SectionTitle>
             <Swiper
                 slidesPerView={3}
                 spaceBetween={30}
