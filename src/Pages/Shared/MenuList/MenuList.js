@@ -3,6 +3,7 @@ import Menuitem from '../Menuitem/Menuitem';
 import { Link } from 'react-router-dom';
 
 const MenuList = ({ item, title }) => {
+    console.log(title);
     return (
         <div>
             <div className='mt-[58px] md:grid grid-cols-2 gap-10 mx-[100px]'>
